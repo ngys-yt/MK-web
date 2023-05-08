@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Lint Check
-        run: yarn --cwd frontend/ run lint
+        run: yarn --cwd src/ run lint
 
       - name: Type Check
-        run: yarn --cwd frontend/ run tsc
+        run: yarn --cwd src/ run tsc
