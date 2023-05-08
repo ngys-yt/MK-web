@@ -7,11 +7,11 @@ on:
     types: [opened]
 
 jobs:
-  print-hello-world:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: yarn ci
         run: |
           yarn tsc
           yarn lint
-        working-directory: src
+        working-directory: ./src
