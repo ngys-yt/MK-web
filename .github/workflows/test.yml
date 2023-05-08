@@ -1,17 +1,18 @@
 name: Action Sample
 
-run-name: pull_request
+run-name: test
 
 on:
-  pull_request:
-    types: [opened]
+  push:
+    paths:
+      - src/**
 
 jobs:
-  print-hello-world:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: yarn ci
-        run: |
-          yarn tsc
-          yarn lint
-        working-directory: src
+      - name: Lint Check
+        run: yarn --cwd frontend/ run lint
+
+      - name: Type Check
+        run: yarn --cwd frontend/ run tsc
