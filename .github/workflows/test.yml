@@ -1,0 +1,17 @@
+name: Action Sample
+
+run-name: pull_request
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: yarn ci
+        run: |
+          yarn tsc
+          yarn lint
+        working-directory: src
