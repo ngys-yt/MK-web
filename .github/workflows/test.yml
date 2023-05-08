@@ -16,3 +16,4 @@ jobs:
 
       - name: Type Check
         run: yarn --cwd frontend/ run tsc
+# hogehoge
