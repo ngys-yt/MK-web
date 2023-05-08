@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Lint Check
-        run: yarn --cwd frontend/ run lint
+        run: yarn lint
 
       - name: Type Check
-        run: yarn --cwd frontend/ run tsc
+        run: yarn tsc
 # hogehoge
