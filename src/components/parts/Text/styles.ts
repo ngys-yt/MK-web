@@ -1,6 +1,4 @@
-import { css } from '@emotion/react';
-
-
+import { css } from '@emotion/css';
 
 type GetStyleInput = {
   size: string;
