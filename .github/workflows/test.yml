@@ -1,8 +1,8 @@
 name: TypeScript and ESLint Check
 on:
   pull_request:
-    paths:
-      - 'src/**'
+    types: opened
+    paths: 'src/**'
 
 jobs:
   build:
