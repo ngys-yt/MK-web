@@ -1,7 +1,6 @@
 name: TypeScript and ESLint Check
 on:
-  pull_request:
-    types: opened
+  push:
     paths: 'src/**'
 
 jobs:
