@@ -13,3 +13,5 @@ const Text = ({ size = 'm', color = '', children }: Props) => {
 };
 
 export default Text;
+
+// ほげほげ
