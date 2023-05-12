@@ -11,5 +11,5 @@ const Text = ({ size = 'm', color = '', children }: Props) => {
   const style = getStyle({ size, color });
   return <div className={style.container}>{children}</div>;
 };
-
+// やほほい
 export default Text;
